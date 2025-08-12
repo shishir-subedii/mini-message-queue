@@ -1,0 +1,26 @@
+{
+    "name": "mini-message-queue",
+    "version": "1.0.0",
+    "description": "A lightweight, in-memory message queue with topics, retries, and backoff — Kafka-like but no infra required.",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/esm/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/cjs/index.js",
+            "import": "./dist/esm/index.js"
+        }
+    },
+    "scripts": {
+        "build:esm": "tsc --project tsconfig.build.esm.json",
+        "build:cjs": "tsc --project tsconfig.build.cjs.json",
+        "build": "npm run build:esm && npm run build:cjs",
+        "test": "vitest"
+    },
+    "devDependencies": {
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.2",
+        "vitest": "^1.0.0"
+    },
+    "license": "MIT"
+}
