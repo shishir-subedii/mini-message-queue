@@ -5,11 +5,21 @@
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "types": "dist/esm/index.d.ts",
+    "author": "Shishir Subedi <shishir16subedi@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shishir-subedii/mini-message-queue.git"
+    },
+    "homepage": "https://github.com/shishir-subedii/mini-message-queue#readme",
     "exports": {
         ".": {
             "require": "./dist/cjs/index.js",
             "import": "./dist/esm/index.js"
         }
+    },
+    "publishConfig": {
+        "access": "public"
     },
     "scripts": {
         "build:esm": "tsc --project tsconfig.build.esm.json",
@@ -21,6 +31,5 @@
         "ts-node": "^10.9.2",
         "typescript": "^5.9.2",
         "vitest": "^1.0.0"
-    },
-    "license": "MIT"
+    }
 }
