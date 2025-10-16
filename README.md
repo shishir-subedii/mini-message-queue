@@ -126,9 +126,10 @@ interface MessageQueueOptions {
 type Handler = (payload: any) => Promise<void>;
 ```
 ---
-## License  
+## 📄 License
 
-MIT
+MIT License
+ © 2025 Shishir Subedi
 
 ---
 
